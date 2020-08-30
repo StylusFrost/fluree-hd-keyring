@@ -1,0 +1,3 @@
+{
+  "extends": "@flureejs/config-tslint/tslint.json"
+}

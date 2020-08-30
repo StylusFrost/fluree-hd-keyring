@@ -1,0 +1,4 @@
+{
+  "extends": "@flureejs/config-typescript/tsconfig.json",
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "fluree-hd-keyring",
+  "version": "0.1.0",
+  "description": "A simple standard interface for a seed phrase generated set of Fluree accounts.",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "flureejs-config-ts-build",
+    "prepublishOnly": "npm run format && npm run tslint && npm run test",
+    "docs:build": "typedoc --out docs --mode file --readme none --theme markdown --mdEngine github --excludeNotExported src",
+    "coverage": "flureejs-config-coverage",
+    "format": "flureejs-config-format",
+    "format:fix": "flureejs-config-format-fix",
+    "lint": "flureejs-config-lint",
+    "lint:fix": "flureejs-config-lint-fix",
+    "test:browser": "karma start  karma.conf.js",
+    "tsc": "flureejs-config-ts-compile",
+    "test": "npm run build && nyc --reporter=lcov mocha --require ts-node/register --require source-map-support/register ./test/**/*.ts",
+    "tslint": "flureejs-config-tslint",
+    "tslint:fix": "flureejs-config-tslint-fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StylusFrost/fluree-hd-keyring.git"
+  },
+  "keywords": [
+    "fluree",
+    "keyring"
+  ],
+  "author": "Pedro Miguel Díaz Peña <pm.diaz.pena@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StylusFrost/fluree-hd-keyring/issues"
+  },
+  "homepage": "https://github.com/StylusFrost/fluree-hd-keyring",
+  "dependencies": {
+    "bip39": "^2.2.0",
+    "flureejs-wallet": "^0.1.2",
+    "flureejs-query":"^0.1.2",
+    "flureejs-request":"^0.1.2",
+    "flureejs-tx":"^0.1.2",
+    "flureejs-utils":"^0.1.9",
+    "fluree-simple-keyring":"^0.1.1"
+  },
+  "devDependencies": {
+    "@flureejs/config-coverage": "^0.1.5",
+    "@flureejs/config-format": "^0.1.5",
+    "@flureejs/config-typescript": "^0.1.6",
+    "@flureejs/config-tslint": "^0.1.5",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.0.10",
+    "husky": "^2.1.0",
+    "karma": "^5.0.2",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^2.0.0",
+    "karma-typescript": "^5.0.2",
+    "mocha": "^7.1.2",
+    "nyc": "^15.0.1",
+    "prettier": "^1.15.3",
+    "source-map-support": "^0.5.12",
+    "strip-hex-prefix": "^1.0.0",
+    "ts-node": "^8.9.1",
+    "tslint": "^5.12.0",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-markdown": "^1.2.0",
+    "typescript": "^3.8.3",
+    "typestrict": "^1.0.2"
+  }
+}

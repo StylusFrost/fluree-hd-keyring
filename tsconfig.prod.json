@@ -1,0 +1,7 @@
+{
+  "extends": "@flureejs/config-typescript/tsconfig.prod.json",
+  "compilerOptions": {
+    "outDir": "./dist"
+  },
+  "include": ["src/**/*.ts"]
+}
