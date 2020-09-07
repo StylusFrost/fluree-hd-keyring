@@ -67,7 +67,7 @@
 
 _Overrides SimpleKeyring.\_\_constructor_
 
-_Defined in src/index.ts:15_
+_Defined in [src/index.ts:15](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L15)_
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ _Defined in src/index.ts:15_
 
 **● hdPath**: _`string`_
 
-_Defined in src/index.ts:13_
+_Defined in [src/index.ts:13](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L13)_
 
 ---
 
@@ -97,7 +97,7 @@ _Defined in src/index.ts:13_
 
 **● hdWallet**: _`hdkey`_
 
-_Defined in src/index.ts:12_
+_Defined in [src/index.ts:12](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L12)_
 
 ---
 
@@ -107,7 +107,7 @@ _Defined in src/index.ts:12_
 
 **● mnemonic**: _`string`_
 
-_Defined in src/index.ts:14_
+_Defined in [src/index.ts:14](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L14)_
 
 ---
 
@@ -117,7 +117,7 @@ _Defined in src/index.ts:14_
 
 **● opts**: _`any`_
 
-_Defined in src/index.ts:15_
+_Defined in [src/index.ts:15](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L15)_
 
 ---
 
@@ -127,7 +127,7 @@ _Defined in src/index.ts:15_
 
 **● root**: _`hdkey`_
 
-_Defined in src/index.ts:11_
+_Defined in [src/index.ts:11](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L11)_
 
 ---
 
@@ -139,7 +139,7 @@ _Defined in src/index.ts:11_
 
 _Overrides SimpleKeyring.type_
 
-_Defined in src/index.ts:10_
+_Defined in [src/index.ts:10](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L10)_
 
 ---
 
@@ -161,7 +161,7 @@ _Defined in node_modules/fluree-simple-keyring/dist/index.d.ts:10_
 
 **● hdPathString**: _"m/44&#x27;/60&#x27;/0&#x27;/0"_ = `m/44'/60'/0'/0`
 
-_Defined in src/index.ts:8_
+_Defined in [src/index.ts:8](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L8)_
 
 ---
 
@@ -173,7 +173,7 @@ _Defined in src/index.ts:8_
 
 _Overrides SimpleKeyring.type_
 
-_Defined in src/index.ts:9_
+_Defined in [src/index.ts:9](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L9)_
 
 ---
 
@@ -187,7 +187,7 @@ _Defined in src/index.ts:9_
 
 _Overrides SimpleKeyring.addAccounts_
 
-_Defined in src/index.ts:70_
+_Defined in [src/index.ts:70](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L70)_
 
 **Parameters:**
 
@@ -228,7 +228,7 @@ _Defined in node_modules/@types/node/globals.d.ts:553_
 
 _Overrides SimpleKeyring.deserialize_
 
-_Defined in src/index.ts:51_
+_Defined in [src/index.ts:51](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L51)_
 
 **Parameters:**
 
@@ -351,7 +351,7 @@ _Defined in node_modules/@types/node/globals.d.ts:560_
 
 ▸ **initFromMnemonic**(mnemonic: _`string`_): `void`
 
-_Defined in src/index.ts:28_
+_Defined in [src/index.ts:28](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L28)_
 
 **Parameters:**
 
@@ -597,7 +597,7 @@ _Defined in node_modules/@types/node/globals.d.ts:556_
 
 _Overrides SimpleKeyring.serialize_
 
-_Defined in src/index.ts:40_
+_Defined in [src/index.ts:40](https://github.com/StylusFrost/fluree-hd-keyring/blob/ff68471/src/index.ts#L40)_
 
 **Returns:** `Promise`<`object`>
 
