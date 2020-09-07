@@ -146,7 +146,7 @@ describe('hd-keyring', function() {
           )
           assert.equal(
             request.s.toString('hex'),
-            '4293285f206ea46e18a8cae82e84779c0e579d7dbe5e557081da0e11f5b5086b',
+            'c7e4e4c4c84ec09afdde99e51dc34f197a14f65e45f95474c45be93bf2552997',
           )
         })
         .catch(reason => {
@@ -224,7 +224,7 @@ describe('hd-keyring', function() {
           )
           assert.equal(
             query.s.toString('hex'),
-            'b4f7b7d3f4799dda2721495816c6b2ec91f4f7473790a6697ce8c978603cef82',
+            'd8fa7b3ecd547cca24cdbc5a9fae3356414accf8081d29263b739bb943d5a245',
           )
         })
         .catch(reason => {
@@ -399,7 +399,7 @@ describe('hd-keyring', function() {
             )
             assert.equal(
               request.s.toString('hex'),
-              '29d6ec04c0e26eea191d4e3f26fc0f58ba343af6b30e37259135c2508b3126a6',
+              'af28a86a68c28b16fe531d3c163ae6d625f193d73aa93629d3b79d7a87d147d2',
             )
           })
           .catch(reason => {
@@ -425,7 +425,9 @@ describe('hd-keyring', function() {
           })
           .then(() => {
             query = new Query(queryParams)
-            return keyring.signQuery(authID, query)
+            return keyring.signQuery(authID, query, {
+              withAppKeyOrigin: 'someapp.origin.io',
+            })
           })
           .then(() => {
             assert.equal(
@@ -434,7 +436,7 @@ describe('hd-keyring', function() {
             )
             assert.equal(
               query.s.toString('hex'),
-              'b4f7b7d3f4799dda2721495816c6b2ec91f4f7473790a6697ce8c978603cef82',
+              'c03e3ee46dc8474625423fb19825cb12ed276a70fccd0adb4acf4ff7d951c080',
             )
           })
           .catch(reason => {
@@ -462,7 +464,9 @@ describe('hd-keyring', function() {
           })
           .then(() => {
             tx = new Transaction(txParams)
-            return keyring.signTransaction(authID, tx)
+            return keyring.signTransaction(authID, tx, {
+              withAppKeyOrigin: 'someapp.origin.io',
+            })
           })
           .then(() => {
             assert.equal(
@@ -471,7 +475,7 @@ describe('hd-keyring', function() {
             )
             assert.equal(
               tx.s.toString('hex'),
-              '5f220fb3b29361438f30f5a560641fb91d5193dea39d1f91586ea3194749ae65',
+              '4665d35953072bbf8fa578fc58dbb775c92e3157984d014667ca5757dcc5cca0',
             )
           })
           .catch(reason => {
