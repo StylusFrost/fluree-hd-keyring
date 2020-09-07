@@ -1,6 +1,6 @@
 {
   "name": "fluree-hd-keyring",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple standard interface for a seed phrase generated set of Fluree accounts.",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
